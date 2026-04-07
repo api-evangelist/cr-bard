@@ -1,7 +1,11 @@
 aid: cr-bard
-url: https://raw.githubusercontent.com/api-evangelist/cr-bard/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/cr-bard/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.cr-bard.com
+description: >-
+  C. R. Bard was a developer, manufacturer, and marketer of innovative, life-enhancing
+  medical technologies before being acquired by Becton Dickinson.
