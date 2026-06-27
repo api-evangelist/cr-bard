@@ -46,7 +46,7 @@ common:
     url: https://www.linkedin.com/company/bd1/
   - type: PrivacyPolicy
     url: https://www.bd.com/en-us/about-bd/privacy-statement
-  - type: TermsOfUse
+  - type: TermsOfService
     url: https://www.bd.com/en-us/about-bd/terms-of-use
 maintainers:
   - FN: Kin Lane
