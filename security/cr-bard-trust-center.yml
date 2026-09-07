@@ -1,0 +1,42 @@
+generated: '2026-09-07'
+method: searched
+source: https://www.bd.com/en-us/about-bd/cybersecurity
+owner: Becton, Dickinson and Company (BD)
+owner_note: >-
+  The Bard product lines have been part of BD since 2017-12-29 and are covered by BD's corporate
+  cybersecurity trust center. C. R. Bard publishes no trust center of its own; this records the
+  parent's, which is where a Bard-brand buyer is sent.
+trust_center:
+  name: Cybersecurity at BD
+  url: https://www.bd.com/en-us/about-bd/cybersecurity
+  alias_url: https://cybersecurity.bd.com/
+  public: true
+  gated: partial
+  gated_note: >-
+    UL CAP certificates are downloadable; most Product Security White Papers and MDS2 attestations
+    must be requested through a form.
+certifications:
+  - name: ISO/IEC 27001:2022
+    scope: BD information security management
+    evidence: https://www.bd.com/en-us/about-bd/cybersecurity?active-tab=4
+  - name: SOC 2+
+    scope: named BD products
+    evidence: https://www.bd.com/en-us/about-bd/cybersecurity?active-tab=4
+  - name: UL CAP (UL Cybersecurity Assurance Program)
+    scope: named BD devices; certificates published for download
+    evidence: https://www.bd.com/en-us/about-bd/cybersecurity?active-tab=4
+regulatory:
+  - name: HIPAA
+    context: referenced for BD cloud-based products
+  - name: FDA premarket/postmarket cybersecurity guidance
+    context: BD reports vulnerabilities voluntarily to FDA and CISA
+documents:
+  - type: Product Security White Papers
+    includes: MDS2 attestations
+    access: request form
+  - type: BD Cybersecurity Annual Report
+    access: public
+x-evidence:
+  - url: https://www.bd.com/en-us/about-bd/cybersecurity?active-tab=4
+    http_status: 200
+    fetched: '2026-09-07'

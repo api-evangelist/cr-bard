@@ -1,0 +1,62 @@
+# C. R. Bard, Inc.
+
+> C. R. Bard, Inc. was an American multinational developer, manufacturer and marketer of medical
+> technologies across vascular, urology, oncology and surgical specialties. Founded in 1907 by
+> Charles Russell Bard, it was acquired by Becton, Dickinson and Company (BD) on 29 December 2017
+> for approximately $24 billion, ceased trading, and was delisted from the NYSE. It exists today
+> only as a brand and product heritage inside BD's Interventional segment. **C. R. Bard publishes
+> no API, no developer portal and no machine-readable contract of any kind, and has not since the
+> acquisition.** This file is an API Evangelist profile of that absence, not a product index.
+
+Generated: 2026-09-07
+Method: generated (from apis.yml and the artifacts in this repository)
+Provenance: independent third-party profile by API Evangelist — https://apievangelist.com
+
+## Status
+
+- Legal status: wholly-owned subsidiary of Becton, Dickinson and Company since 2017-12-29; no longer an operating company under its own name.
+- Successor surface: BD Interventional — Peripheral Intervention, Surgery, and Urology & Critical Care.
+- Legacy domain: crbard.com still resolves but returns HTTP 404 at the root and every path (Microsoft Azure Application Gateway). It is not a redirect to bd.com.
+- API posture: no-product-api. No OpenAPI, Swagger, GraphQL, AsyncAPI, WSDL, gRPC/Protobuf, OGC or MCP surface was found on any host associated with the company.
+
+## What was probed (2026-09-07)
+
+- Hosts: crbard.com, www.crbard.com, bd.com, www.bd.com, news.bd.com, cybersecurity.bd.com, eifu.bd.com, api.bd.com, apis.bd.com
+- REST spec paths on every host that answered: /openapi.json, /swagger.json, /v1/openapi.json, /api-docs, /docs
+- Discovery documents: /.well-known/security.txt, /openid-configuration, /oauth-authorization-server, /oauth-protected-resource, /api-catalog, /ai-plugin.json, /apis.json, /apis.yml, /aauth-resource.json
+- A2A agent card: /.well-known/agent-card.json and the legacy /.well-known/agent.json
+- Result: zero documents recovered. api.bd.com returns HTTP 502 on every path; apis.bd.com does not complete a TLS connection; eifu.bd.com is a single-page-app catch-all that answers 200 with the same 2,454-byte HTML shell for every path, including a negative-control path that cannot exist.
+- Package registries (npm, PyPI): no first-party C. R. Bard or BD Bard client library. No GitHub organization exists for bd, becton-dickinson, bd-interventional, crbard or bardmedical.
+
+## Company
+
+- Becton, Dickinson and Company (parent): https://www.bd.com/en-us
+- BD Acute Urology — the Bard/Bardex heritage line: https://www.bd.com/en-us/products-and-solutions/solutions/bd-acute-urology
+- BD Interventional segment: https://jobs.bd.com/en/bd-interventional
+- Acquisition announcement (2017-12-29): https://investors.bd.com/news-events/press-releases/detail/352/bd-completes-bard-acquisition-creating-new-global-health-care-leader
+- Contact BD: https://www.bd.com/en-us/support/contact-us
+- Privacy notice: https://www.bd.com/en-us/about-bd/policies/privacy-policy-statement
+- Terms of use: https://www.bd.com/en-us/about-bd/policies/terms-of-use
+
+## Security and compliance (parent program)
+
+BD's corporate program covers the Bard-heritage device lines; C. R. Bard runs no program of its own.
+
+- Cybersecurity at BD (trust center): https://www.bd.com/en-us/about-bd/cybersecurity
+- BD Coordinated Vulnerability Disclosure: https://cybersecurity.bd.com/vulnerability-disclosures
+- BD is an authorized CVE Numbering Authority; it reports vulnerabilities to FDA, CISA and Health-ISAC.
+- Published certifications: ISO/IEC 27001:2022, SOC 2+ (named products), UL CAP.
+- No RFC 9116 security.txt is served on bd.com, www.bd.com or crbard.com.
+
+## Artifacts in this repository
+
+- security/cr-bard-domain-security.yml — TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe of bd.com
+- security/cr-bard-vulnerability-disclosure.yml — BD's coordinated disclosure program (parent-owned)
+- security/cr-bard-trust-center.yml — BD cybersecurity trust center and named certifications (parent-owned)
+- well-known/cr-bard-well-known.yml — the full discovery probe, all misses recorded
+- press/, search/, blogs/ — collected coverage of the company and the acquisition
+
+## Corrections
+
+If any of this is wrong, or you want the listing changed or removed, open an issue on this
+repository or email info@apievangelist.com. No purchase or partnership is required.

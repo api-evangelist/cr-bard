@@ -1,0 +1,205 @@
+generated: '2026-09-07'
+method: probed
+source: live HTTPS probes of every host the record knows (bd.com, www.bd.com, crbard.com, www.crbard.com, news.bd.com, cybersecurity.bd.com, eifu.bd.com, api.bd.com, apis.bd.com)
+note: >-
+  C. R. Bard, Inc. was acquired by Becton, Dickinson and Company in December 2017 and no longer
+  operates an independent web estate. The legacy crbard.com domain still resolves but returns a
+  hard 404 from a Microsoft Azure Application Gateway at every path, including the root. The BD
+  corporate hosts (bd.com / www.bd.com / cybersecurity.bd.com) answer 403 to a non-browser client
+  for every path, which is an ordinary edge bot policy and NOT evidence of absence — real pages on
+  those hosts were confirmed to render through a browser-shaped fetch. eifu.bd.com is a
+  single-page-app catch-all that answers 200 with the same 2,454-byte HTML shell for every path,
+  including a negative-control path that cannot exist, so nothing served there is a document.
+  NO discovery document was recovered on ANY host. No WellKnown or SecurityTxt pointer is emitted.
+hit_count: 0
+path_echo_control: failed          # eifu.bd.com — 200 + identical shell on the negative control
+soft_404_control:
+  host: https://eifu.bd.com
+  path: /.well-known/cr-bard-negative-control-7f3ab91c.json
+  status: 200
+  content_type: text/html
+  bytes: 2454
+  verdict: catch-all SPA shell — identical byte count on every probed path
+hosts:
+  - host: https://www.crbard.com
+    note: legacy C. R. Bard domain; Azure Application Gateway returns 404 at the root and every path
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/apis.json
+        status: 404
+      - path: /apis.json
+        status: 404
+      - path: /apis.yml
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+      - path: /.well-known/aauth-resource.json
+        status: 404
+      - path: /.well-known/cr-bard-negative-control-7f3ab91c.json
+        status: 404
+  - host: https://crbard.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/apis.json
+        status: 404
+      - path: /apis.json
+        status: 404
+      - path: /apis.yml
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+      - path: /.well-known/aauth-resource.json
+        status: 404
+      - path: /.well-known/cr-bard-negative-control-7f3ab91c.json
+        status: 404
+  - host: https://www.bd.com
+    note: >-
+      BD corporate host (the surviving surface for the Bard brand). Returns 403 to a non-browser
+      client on every path; a browser-shaped fetch of /.well-known/security.txt returned a genuine
+      404, so no security.txt is served.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        note: 403 to curl; browser-shaped fetch returned a real 404
+      - path: /.well-known/openid-configuration
+        status: 403
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+      - path: /.well-known/oauth-protected-resource
+        status: 403
+      - path: /.well-known/api-catalog
+        status: 403
+      - path: /.well-known/ai-plugin.json
+        status: 403
+      - path: /.well-known/apis.json
+        status: 403
+      - path: /apis.json
+        status: 403
+      - path: /apis.yml
+        status: 403
+      - path: /.well-known/agent-card.json
+        status: 403
+      - path: /.well-known/agent.json
+        status: 403
+      - path: /.well-known/aauth-resource.json
+        status: 403
+      - path: /.well-known/cr-bard-negative-control-7f3ab91c.json
+        status: 403
+  - host: https://bd.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+      - path: /.well-known/openid-configuration
+        status: 403
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+      - path: /.well-known/oauth-protected-resource
+        status: 403
+      - path: /.well-known/api-catalog
+        status: 403
+      - path: /.well-known/ai-plugin.json
+        status: 403
+      - path: /.well-known/apis.json
+        status: 403
+      - path: /apis.json
+        status: 403
+      - path: /apis.yml
+        status: 403
+      - path: /.well-known/agent-card.json
+        status: 403
+      - path: /.well-known/agent.json
+        status: 403
+      - path: /.well-known/aauth-resource.json
+        status: 403
+      - path: /.well-known/cr-bard-negative-control-7f3ab91c.json
+        status: 403
+  - host: https://news.bd.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/apis.json
+        status: 404
+      - path: /apis.json
+        status: 404
+      - path: /apis.yml
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+      - path: /.well-known/aauth-resource.json
+        status: 404
+      - path: /.well-known/cr-bard-negative-control-7f3ab91c.json
+        status: 404
+  - host: https://cybersecurity.bd.com
+    note: BD Cybersecurity Trust Center; 302s to www.bd.com/en-us/about-bd/cybersecurity. 403 to a non-browser client.
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+      - path: /.well-known/api-catalog
+        status: 403
+      - path: /.well-known/agent-card.json
+        status: 403
+      - path: /.well-known/agent.json
+        status: 403
+      - path: /apis.json
+        status: 403
+      - path: /.well-known/cr-bard-negative-control-7f3ab91c.json
+        status: 403
+  - host: https://eifu.bd.com
+    note: BD Electronic Instructions for Use; SPA catch-all, 200 + identical HTML shell on every path including the negative control. Nothing here is a document.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        note: catch-all HTML shell, 2454 bytes — not a document
+      - path: /.well-known/api-catalog
+        status: 200
+        note: catch-all HTML shell, 2454 bytes — not a document
+      - path: /.well-known/agent-card.json
+        status: 200
+        note: catch-all HTML shell, 2454 bytes — not a document
+      - path: /.well-known/agent.json
+        status: 200
+        note: catch-all HTML shell, 2454 bytes — not a document
+      - path: /apis.json
+        status: 200
+        note: catch-all HTML shell, 2454 bytes — not a document
+      - path: /.well-known/cr-bard-negative-control-7f3ab91c.json
+        status: 200
+        note: negative control returned the same shell — every hit on this host is discarded

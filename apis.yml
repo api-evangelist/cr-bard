@@ -42,7 +42,7 @@ type: Index
 access: 3rd-Party
 position: Consuming
 created: '2024-01-01'
-modified: '2026-04-28'
+modified: '2026-09-07'
 tags:
   - BD
   - Becton Dickinson
@@ -58,27 +58,60 @@ apis: []
 common:
   - type: DomainSecurity
     url: security/cr-bard-domain-security.yml
+  - type: Security
+    url: security/cr-bard-vulnerability-disclosure.yml
+  - type: VulnerabilityDisclosure
+    url: security/cr-bard-vulnerability-disclosure.yml
+  - type: TrustCenter
+    url: security/cr-bard-trust-center.yml
+  - type: Compliance
+    url: security/cr-bard-trust-center.yml
+  - type: LLMsTxt
+    url: llms/cr-bard-llms.txt
   - type: Website
     url: https://www.bd.com/en-us
-  - type: BDBardBrand
-    url: https://www.bd.com/en-us/products-and-solutions/products/product-brands/bard
-  - type: LegacyWebsite
-    url: https://www.crbard.com
-  - type: BDInterventional
-    url: https://www.bd.com/en-us/about-bd/our-businesses/bd-interventional
-  - type: BDAcquisitionAnnouncement
-    url: https://news.bd.com/2017-12-29-BD-Completes-Acquisition-of-C-R-Bard
-  - type: ContactBD
-    url: https://www.bd.com/en-us/about-bd/contact-us
-  - type: BDLinkedIn
+  - type: ParentCompany
+    url: https://www.bd.com/en-us/about-bd/our-company
+  - type: Solutions
+    url: https://www.bd.com/en-us/products-and-solutions/solutions/bd-acute-urology
+  - type: Careers
+    url: https://jobs.bd.com/en/bd-interventional
+  - type: PressReleases
+    url: https://investors.bd.com/news-events/press-releases/detail/352/bd-completes-bard-acquisition-creating-new-global-health-care-leader
+  - type: Support
+    url: https://www.bd.com/en-us/support/contact-us
+  - type: LinkedIn
     url: https://www.linkedin.com/company/bd1/
   - type: PrivacyPolicy
-    url: https://www.bd.com/en-us/about-bd/privacy-statement
+    url: https://www.bd.com/en-us/about-bd/policies/privacy-policy-statement
   - type: TermsOfService
-    url: https://www.bd.com/en-us/about-bd/terms-of-use
+    url: https://www.bd.com/en-us/about-bd/policies/terms-of-use
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 x-parent: becton-dickinson
 x-relationship: acquisition
 x-acquired: 2017
+x-enrichment:
+  date: '2026-09-07'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    C. R. Bard ceased to exist as an operating company when BD completed its acquisition on
+    2017-12-29; the legacy crbard.com domain still resolves but returns a hard 404 from an Azure
+    Application Gateway at the root and at every path probed, and no successor developer surface
+    exists under the BD Bard brand.
+  evidence:
+    - url: https://www.crbard.com/
+      status: 404
+    - url: https://www.bd.com/en-us/products-and-solutions/products/product-brands/bard
+      status: 404
+    - url: https://api.bd.com/openapi.json
+      status: 502
+    - url: https://www.bd.com/.well-known/security.txt
+      status: 404
+  checked: '2026-09-07'
