@@ -1,7 +1,9 @@
 ---
 title: 5 takeaways from Becton Dickinson's $24B acquisition of ...
 url: https://medcitynews.com/2017/04/5-takeaways-becton-dickinsons-24b-acquisition-c-r-bard/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"C.R. Bard" press release artificial intelligence'
 position: 1
 source: serpapi-google

@@ -1,7 +1,9 @@
 ---
 title: C. R. Bard, Inc. to Acquire Medivance for $250 Million
 url: https://www.biospace.com/c-r-bard-inc-to-acquire-medivance-for-250-million
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"C.R. Bard" press release artificial intelligence'
 position: 3
 source: serpapi-google

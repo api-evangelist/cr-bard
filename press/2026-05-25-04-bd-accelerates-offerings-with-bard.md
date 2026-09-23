@@ -1,7 +1,9 @@
 ---
 title: BD accelerates offerings with Bard
 url: https://www.hmenews.com/article/bd-accelerates-offerings-bard
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"C.R. Bard" press release artificial intelligence'
 position: 4
 source: serpapi-google

@@ -1,7 +1,9 @@
 ---
 title: Boston Scientific Buys C.R. Bard's Electrophysiology ...
 url: https://www.mddionline.com/business/boston-scientific-buys-c-r-bard-s-electrophysiology-business
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"C.R. Bard" press release artificial intelligence'
 position: 5
 source: serpapi-google
