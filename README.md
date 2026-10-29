@@ -1,4 +1,4 @@
-# C. R. Bard (cr-bard)
+# C. R. Bard
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,41 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-C. R. Bard, Inc. was an American multinational developer, manufacturer, and marketer of medical technologies in the fields of vascular, urology, oncology, and surgical specialties. Founded in 1907 by Charles Russell Bard, the company was acquired by Becton, Dickinson and Company (BD) in December 2017 for approximately $24 billion. Bard's product lines now operate as part of BD's Interventional segment under the BD Bard brand.
+C. R. Bard, Inc. was an American multinational developer, manufacturer, and marketer of medical technologies in the fields of vascular, urology, oncology, and surgical specialties. Bard was founded in 1907 by Charles Russell Bard and was acquired by Becton, Dickinson and Company (BD) in December 2017 for approximately $24 billion. Bard's product lines now operate as part of BD's Interventional segment under the BD Bard brand. No public API or developer portal is published; integrations with hospital and provider systems are arranged through BD enterprise channels.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/cr-bard/refs/heads/main/apis.yml)
+**Areas:** BD · Becton Dickinson · Interventional · Medical Devices · Medical Technology · Oncology · Surgery · Urology · Vascular · Fortune 1000
 
-## Scope
+## C. R. Bard on APIs.io
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
-- **x-type:** company
+Everything profiled for C. R. Bard is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cr-bard/](https://apis.io/providers/cr-bard/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### Published properties
 
-- BD, Becton Dickinson, Interventional, Medical Devices, Medical Technology, Oncology, Surgery, Urology, Vascular
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Timestamps
+#### Security (3)
 
-- **Created:** 2024-01-01
-- **Modified:** 2026-04-28
+Authentication, trust centre, and vulnerability disclosure.
 
-## APIs
+- [Cr Bard Domain Security](https://apis.io/security/cr-bard/cr-bard-domain-security/)
+- [Cr Bard Trust Center](https://apis.io/security/cr-bard/cr-bard-trust-center/)
+- [Cr Bard Vulnerability Disclosure](https://apis.io/security/cr-bard/cr-bard-vulnerability-disclosure/)
 
-No public API or developer portal is currently published. Integrations with hospital and provider systems are arranged through BD enterprise channels.
+## Where to find this API
 
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- [BD Website](https://www.bd.com/en-us)
-- [BD Bard Brand](https://www.bd.com/en-us/products-and-solutions/products/product-brands/bard)
-- [Legacy C. R. Bard Site](https://www.crbard.com)
-- [BD Interventional](https://www.bd.com/en-us/about-bd/our-businesses/bd-interventional)
-- [BD Acquisition Announcement](https://news.bd.com/2017-12-29-BD-Completes-Acquisition-of-C-R-Bard)
-- [Contact BD](https://www.bd.com/en-us/about-bd/contact-us)
+- [Website](https://www.bd.com/en-us)
+- [Support](https://www.bd.com/en-us/support/contact-us)
+- [Terms of service](https://www.bd.com/en-us/about-bd/policies/terms-of-use)
+- [Privacy policy](https://www.bd.com/en-us/about-bd/policies/privacy-policy-statement)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 16.4** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 36.8 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.5** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cr-bard/](https://apis.io/providers/cr-bard/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for C. R. Bard: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cr-bard/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
